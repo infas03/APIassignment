@@ -1,20 +1,5 @@
 const Product = require('../model/productModal.js');
 
-// exports.postEditTutorial = (req, res, next) => {
-//     const id = req.body.id;
-//     const title = req.body.title;
-//     const published = req.body.published;
-//     const description = req.body.description;
-//     const updatedTutorial = new Tutorial(
-//         id,
-//         title,
-//         description,
-//         published
-//     );
-//     updatedTutorial.save();
-//     res.status(200).json({ message: id ? 'Tutorial Updated Successfully' : 'Tutorial Added Successfully' })
-// };
-
 exports.testproduct = (req, res, next) => {
     return res.status(200).json({
         message: "Hello world testing!",
