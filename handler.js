@@ -17,10 +17,16 @@ app.get("/hello", (req, res, next) => {
   });
 });
 
-app.post("/postproduct",productController.postProduct);
-app.get("/allproducts", productController.getProducts);
-app.get("/product/:id", productController.getProduct);
-app.delete("/product/:id", productController.DeleteProduct);
+//my CRUD Functions
+app.post("/postproduct",productController.postProduct); //add product
+
+app.put("/postproduct",productController.postProduct); //update product
+
+app.get("/allproducts", productController.getProducts);//view all product
+
+app.get("/product/:id", productController.getProduct);//view one product
+
+app.delete("/product/:id", productController.DeleteProduct);//delete product
 
 
 app.get("/hitest", productController.testproduct);
